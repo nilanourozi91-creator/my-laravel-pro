@@ -4,7 +4,7 @@ use Livewire\Component;
 
 new class extends Component
 {
-    public $name = 'ali';
+    public $name = 'Nila';
     public $date = 0;
     public $greeting = "";
 
@@ -36,7 +36,7 @@ new class extends Component
 ?>
 
 <div>
-    <div>
-        hi i am {{ $name }} and {{ $greeting }}
+    <div class=" text-3xl text-black-600/55 w-full flex justify-between items-center h-20">
+        Hello i am {{ $name }} and {{ $greeting }}
     </div>
 </div>

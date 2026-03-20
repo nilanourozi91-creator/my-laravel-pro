@@ -45,7 +45,7 @@ new class extends Component
 <div>
    <div class="h-screen w-full justify-between  flex flex-wrap">
     @foreach($book as $b)
-         <div class="text-xl bg-gray-800 text-center h-50 w-80 hover:bg-gray-900  hover:border-amber-300 border text-white border-white p-3 m-3 rounded-2xl">
+         <div class="text-xl bg-gray-600 text-center h-50 w-80 hover:bg-blue-700  hover:border-amber-300 border text-white border-white p-3 m-3 rounded-2xl">
            
             <h1>
                 <svg xmlns="http://www.w3.org/2000/svg" 
@@ -80,14 +80,14 @@ new class extends Component
                     <div class="flex justify-between items-center text-sm px-4 py-2">
 
     <!-- Cancel -->
-    <button wire:click="cencal"
-        class="border border-blue-900 px-3 py-2 rounded-2xl bg-blue-700/30">
+    <button wire:click="cencal({{$b->id}})"
+        class="border border-blue-900 px-3 py-2 rounded-2xl bg-blue-700">
         Cancel
     </button>
 
     <!-- Delete -->
     <button wire:click="deleteBooks({{ $bookId }})"
-        class="border border-red-900 px-3 py-2 rounded-2xl bg-red-500/50">
+        class="border border-red-900 px-3 py-2 rounded-2xl bg-red-500">
         Delete
     </button>
 
