@@ -9,7 +9,7 @@
     @livewireStyles
 </head>
 
-<body style="background-color:#4a5565; color:green; font-size:40px;">
+<body class="bg-svg">
 
     <livewire:test/>
     <livewire:book-list/>
